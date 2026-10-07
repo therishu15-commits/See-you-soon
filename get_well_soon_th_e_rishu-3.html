@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Well Soon ♡</title>
+<style>
+:root{
+  --bg1:#eee8ff; --bg2:#dff6f1; --glass:rgba(255,255,255,.25);
+  --line:rgba(255,255,255,.65); --text:#303040; --soft:#696579;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; font-family:Georgia,"Times New Roman",serif; color:var(--text);
+  background:radial-gradient(circle at 15% 15%,#fff 0 8%,transparent 30%),
+             radial-gradient(circle at 85% 20%,#f6d9ec 0 5%,transparent 28%),
+             linear-gradient(135deg,var(--bg1),var(--bg2));
+  min-height:100vh; overflow-x:hidden;
+}
+body:before,body:after{
+  content:"";position:fixed;border-radius:50%;filter:blur(55px);opacity:.55;z-index:-1;
+}
+body:before{width:260px;height:260px;background:#e5b9df;top:10%;left:-80px}
+body:after{width:300px;height:300px;background:#a9ddd3;right:-100px;bottom:5%}
+.container{width:min(1050px,92%);margin:auto}
+.glass{
+  background:linear-gradient(135deg,rgba(255,255,255,.42),rgba(255,255,255,.14));
+  border:1px solid var(--line); box-shadow:0 18px 55px rgba(78,61,104,.13),inset 0 1px 0 rgba(255,255,255,.8);
+  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);
+}
+.hero{min-height:100vh;display:grid;place-items:center;padding:30px 0;position:relative}
+.hero-card{padding:55px 28px;border-radius:38px;text-align:center;max-width:760px;position:relative;overflow:hidden}
+.hero-card:after{
+ content:"";position:absolute;top:-40%;left:-30%;width:35%;height:180%;transform:rotate(25deg);
+ background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);animation:shine 5s infinite;
+}
+.lotus{font-size:58px;line-height:1;filter:drop-shadow(0 7px 12px rgba(100,70,100,.18));animation:float 4s ease-in-out infinite}
+.kicker{letter-spacing:4px;text-transform:uppercase;color:#7b7187;font-size:12px;margin:18px 0}
+h1{font-size:clamp(48px,10vw,92px);line-height:.95;margin:10px 0 22px;font-weight:500}
+.hero p{font-size:20px;line-height:1.7;color:var(--soft);max-width:620px;margin:0 auto 30px}
+.btn{
+ display:inline-block;border:1px solid rgba(255,255,255,.8);background:rgba(255,255,255,.3);
+ color:var(--text);padding:15px 24px;border-radius:999px;text-decoration:none;cursor:pointer;
+ box-shadow:0 8px 25px rgba(70,55,90,.12);transition:.3s;font-family:inherit;font-size:16px
+}
+.btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.5)}
+.section{padding:85px 0}
+.section-title{text-align:center;font-size:42px;font-weight:500;margin:0 0 14px}
+.section-sub{text-align:center;color:var(--soft);margin:0 auto 35px;max-width:600px;line-height:1.7}
+.message{padding:38px;border-radius:32px;line-height:1.9;font-size:18px;position:relative}
+.signature{margin-top:28px;text-align:right;font-size:21px;font-style:italic}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:28px;border-radius:28px;min-height:180px;transition:.35s}
+.card:hover{transform:translateY(-7px) rotateX(2deg)}
+.card .icon{font-size:31px}.card h3{margin:15px 0 8px;font-size:21px}.card p{color:var(--soft);line-height:1.65;margin:0}
+.reveal{text-align:center;padding:50px 25px;border-radius:36px}
+.secret{display:none;animation:appear 1s ease}
+.secret.show{display:block}
+.secret p{font-size:24px;line-height:1.7;max-width:700px;margin:25px auto}
+.footer{text-align:center;padding:30px 0 55px;color:#777080}
+.footer strong{display:block;color:#4f4758;font-size:18px;margin-top:8px}
+.particle{position:fixed;pointer-events:none;z-index:20;font-size:20px;animation:rise 2.8s ease-out forwards}
+@keyframes float{50%{transform:translateY(-9px)}} @keyframes shine{0%,55%{left:-45%}100%{left:130%}}
+@keyframes rise{to{transform:translate(var(--x),-105vh) rotate(360deg);opacity:0}}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.hero-card{padding:42px 22px}.section{padding:65px 0}.message{padding:26px;font-size:17px}.section-title{font-size:34px}}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="container">
+    <div class="glass hero-card">
+      <div class="lotus">🪷</div>
+      <div class="kicker">A little something, just for you</div>
+      <h1>Get Well Soon</h1>
+      <p>Because someone who brings a little brightness to other people's days deserves some brightness of her own. 🤍</p>
+      <a class="btn" href="#message">Open your little surprise ✨</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="message">
+<div class="container">
+  <h2 class="section-title">For You 🌷</h2>
+  <p class="section-sub">A small reminder that better days are on their way.</p>
+  <div class="glass message">
+    Hey,<br><br>
+    I know you're not feeling your best right now, so I just wanted to leave you a little reminder here.
+    Take your time, rest properly, and take care of yourself. You don't have to be cheerful every moment.
+    Just focus on getting better, one day at a time.<br><br>
+    I hope every new morning brings you a little more energy, every day feels a little easier,
+    and soon you're back to your normal self, smiling, laughing, and annoying everyone like usual. 😄<br><br>
+    Until then, consider this a tiny digital reminder that someone is wishing you good health,
+    peaceful days, and a very quick recovery.<br><br>
+    <strong>Get well soon. 🪷🤍</strong>
+    <div class="signature">— thͥe rͣiͫຮhu</div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <h2 class="section-title">A Few Wishes For You</h2>
+  <p class="section-sub">Little wishes, wrapped in a little glass.</p>
+  <div class="grid">
+    <div class="glass card"><div class="icon">🪷</div><h3>Better Days</h3><p>May tomorrow feel a little lighter than today.</p></div>
+    <div class="glass card"><div class="icon">☀️</div><h3>More Smiles</h3><p>May your smile return sooner than you expect.</p></div>
+    <div class="glass card"><div class="icon">🫶</div><h3>Take Care</h3><p>Rest, relax, and give yourself all the time you need.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="glass reveal">
+    <div class="lotus">🪷</div>
+    <h2 class="section-title">Sending You Some Sunshine</h2>
+    <p class="section-sub">Tap the button. You might get a little extra good energy.</p>
+    <button class="btn" onclick="sunshine()">Send some sunshine ☀️</button>
+    <div id="sun" class="secret">
+      <p>“A little sunshine, a little peace, and lots of good wishes, just for you.” ☀️🤍</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+  <div class="glass reveal">
+    <div class="kicker">One last thing...</div>
+    <button class="btn" onclick="reveal()">Reveal ✨</button>
+    <div id="final" class="secret">
+      <div class="lotus">🪷</div>
+      <p>You’ve got this.<br>
+      Take care of yourself, get plenty of rest, and come back with that smile soon. 🤍<br><br>
+      The world can wait.<br>
+      For now, just get better.</p>
+      <div class="signature">— thͥe rͣiͫຮhu 🌷</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="footer">Made with a little care, just for you.<strong>thͥe rͣiͫຮhu</strong> 🪷</div>
+
+<script>
+function particles(chars){
+ for(let i=0;i<24;i++){
+   const e=document.createElement('span'); e.className='particle';
+   e.textContent=chars[Math.floor(Math.random()*chars.length)];
+   e.style.left=(Math.random()*100)+'vw'; e.style.bottom='8vh';
+   e.style.setProperty('--x',((Math.random()-.5)*45)+'vw');
+   e.style.animationDelay=(Math.random()*.7)+'s';
+   document.body.appendChild(e); setTimeout(()=>e.remove(),3500);
+ }
+}
+function sunshine(){document.getElementById('sun').classList.add('show');particles(['☀','✦','🪷','♡']);}
+function reveal(){document.getElementById('final').classList.add('show');particles(['♡','✦','🪷','✨']);}
+</script>
+</body>
+</html>
